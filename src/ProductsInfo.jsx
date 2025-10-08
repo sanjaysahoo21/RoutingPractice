@@ -29,7 +29,7 @@ function ProductsInfo() {
         const dataFound = Data.find((ele) => ele.id === id);
         setData(dataFound);
     },[id])
-    if (!data) {
+    if (data == null) {
         return <h2>Loading product information...</h2>;
     }
   return (
